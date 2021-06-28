@@ -1,0 +1,40 @@
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: wheat;
+  background-color: rgb(22, 11, 11);
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 15px;
+  margin: wheat solid;
+}
+h5 {
+  background-color: black;
+  color: wheat;
+  text-align: center;
+  font-weight: 50px;
+}
+h3 {
+  text-align: center;
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+h3,
+span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(57, 3, 3);
+  background-color: wheat;
+  border: transparent;
+  padding: 10px;
+  align-content: center;
+}
