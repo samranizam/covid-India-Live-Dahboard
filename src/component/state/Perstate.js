@@ -48,7 +48,7 @@ const Perstate = () => {
                       Active Cases : {curEl.active} <br />
                       Confirmed Cases : {curEl.confirmed} <br />
                       Total Deaths : {curEl.deaths}
-                      <br />
+                      <br/>
                       Last Updated Time : {curEl.lastupdatedtime}
                       <br />
                     </p>
