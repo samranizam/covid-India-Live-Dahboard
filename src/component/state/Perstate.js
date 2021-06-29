@@ -45,8 +45,8 @@ const Perstate = () => {
                 <div className="card-text"> */}
                     <p className="heading2"> Data of {curEl.state}</p>
                     <p className="heading3">
-                      Active cases : {curEl.active} <br />
-                      Confirmed Cases cases : {curEl.confirmed} <br />
+                      Active Cases : {curEl.active} <br />
+                      Confirmed Cases : {curEl.confirmed} <br />
                       Total Deaths : {curEl.deaths}
                       <br />
                       Last Updated Time : {curEl.lastupdatedtime}
