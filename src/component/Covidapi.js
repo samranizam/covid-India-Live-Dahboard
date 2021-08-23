@@ -24,9 +24,7 @@ const Covid = () => {
       console.log("error");
     }
   };
-  useEffect(() => {
-    user();
-  }, []);
+ 
   return (
     <div>
       <h5 className=".bg-danger text-center"> !!LIVE!! </h5>
