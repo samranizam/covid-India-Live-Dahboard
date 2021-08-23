@@ -4,9 +4,9 @@ import "C:/react/cov/covid/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 const Covid = () => {
   const [data, setData] = useState([]);
-  const user = async () => {
+  const user =  () => {
     try {
-      const fetchState = await axios.post(
+      const fetchState = axios.post(
         "https://api.covid19india.org/data.json"
       , {},
         
