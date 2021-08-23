@@ -11,8 +11,8 @@ const Covid = () => {
       );
       //setindiastate(fetchState.data.statewise);
       //console.log(indiastate);
-      console.log(fetchState.statewise[0]);
-      setData(fetchState.statewise[0]);
+      console.log(fetchState.data.statewise[0]);
+      setData(fetchState.data.statewise[0]);
     } catch (error) {
       console.log("error");
     }
