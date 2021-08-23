@@ -18,7 +18,7 @@ const Covid = () => {
                 }
               )
       .then ((res) => {
-      console.log(fetchState.data.statewise[0]);
+      console.log(fetchState.data.data[0]);
       setData(fetchState.data.statewise[0]);
       })
     .catch (error) {
