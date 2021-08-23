@@ -4,6 +4,7 @@ import "C:/react/cov/covid/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
 const Covid = () => {
   const [data, setData] = useState([]);
+   useEffect(() => {
   const user =  () => {
     try {
       const fetchState = axios.post(
@@ -24,6 +25,8 @@ const Covid = () => {
       console.log("error");
     }
   };
+    user();
+    }, [])
  
   return (
     <div>
