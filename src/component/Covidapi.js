@@ -6,14 +6,21 @@ const Covid = () => {
   const [data, setData] = useState([]);
   const user = async () => {
     try {
-      const fetchState = await axios.get(
+      const fetchState = await axios.post(
         "https://api.covid19india.org/data.json"
-      );
-      //setindiastate(fetchState.data.statewise);
-      //console.log(indiastate);
+      , {},
+        
+             {
+                  headers: {
+                    "Access-Control-Allow-Origin":"*",
+                  },
+                }
+              )
+      .then ((res) => {
       console.log(fetchState.data.statewise[0]);
       setData(fetchState.data.statewise[0]);
-    } catch (error) {
+      })
+    .catch (error) {
       console.log("error");
     }
   };
