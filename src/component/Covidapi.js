@@ -14,6 +14,7 @@ const Covid = () => {
              {
                   headers: {
                     "Access-Control-Allow-Origin":"*",
+                 
                   },
                 }
               )
