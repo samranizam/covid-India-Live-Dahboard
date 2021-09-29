@@ -8,8 +8,8 @@ const Covid = () => {
   const user =  () => {
     
       axios.post(
-        "https://api.covid19india.org/data.json"
-      , {},
+        "https://api.covid19india.org/data.json",
+    
         
              {
                   headers: {
