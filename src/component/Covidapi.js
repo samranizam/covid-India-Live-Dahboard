@@ -6,8 +6,8 @@ const Covid = () => {
   const [data, setData] = useState([]);
    useEffect(() => {
   const user =  () => {
-    try {
-      const fetchState = axios.post(
+    
+      axios.post(
         "https://api.covid19india.org/data.json"
       , {},
         
@@ -21,10 +21,9 @@ const Covid = () => {
       console.log(fetchState.data.data[0]);
       setData(fetchState.data.statewise[0]);
       })
-    .catch (error) {
-      console.log("error");
-    }
-  };
+    .catch((err) =>{ console.log(err);
+      });
+  }
     user();
     }, [])
  
