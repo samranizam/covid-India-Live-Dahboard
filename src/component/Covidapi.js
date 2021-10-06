@@ -7,16 +7,11 @@ const Covid = () => {
    useEffect(() => {
   const user =  () => {
     
-      axios.post(
+      axios.get(
         "https://api.covid19india.org/data.json",
     
         
-             {
-                  headers: {
-                    "Access-Control-Allow-Origin":"*",
-                 
-                  },
-                }
+           
               )
       .then ((res) => {
       console.log(fetchState.data.data[0]);
