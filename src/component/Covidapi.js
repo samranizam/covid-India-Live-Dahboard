@@ -2,7 +2,7 @@ import axios from "axios";
 import "C:/react/cov/covid/src/component/covidapi.css";
 import "C:/react/cov/covid/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
-const Covid = () => {
+function Covidapi  {
   const [data, setData] = useState([]);
    useEffect(() => {
   const user =  () => {
@@ -14,8 +14,8 @@ const Covid = () => {
            
               )
       .then ((res) => {
-      console.log(fetchState.data.data[0]);
-      setData(fetchState.data.statewise[0]);
+      console.log(user.data.data[0]);
+      setData(user.data.statewise[0]);
       })
     .catch((err) =>{ console.log(err);
       });
